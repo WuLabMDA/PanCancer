@@ -21,9 +21,6 @@ funDir = fullfile(currentDir, 'Function');
 cDir = fullfile(currentDir, 'third_party_package\SPHARM-MAT-v1-0-0\code\C_sources\');
 addpath(CodeDir);addpath(funDir);addpath(cDir);
 
-segEvDir = 'C:\SoftwareNoInstall\SegEvaluation\';
-contour2Dir = 'D:\Research\Data\Lung_deeplearning\2D_segmetation_QZhang\';
-
 % set them all to 1 when run new cases
 processmat_label = 1;
 topologyfix_label = 1;

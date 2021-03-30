@@ -16,9 +16,6 @@ from colorama import Fore, Back, Style
 
 init()
 
-cwd = os.getcwd()
-print(cwd)
-
 def resize_imag(ct, mask, img_resolution, plot_label=False):
     dim = ct.shape
     newdimX = int(round(img_resolution[0]*dim[0]))
@@ -129,11 +126,13 @@ def margin_3D_histogram(ct_sele, mask_sele, lung_sele, img_resolution, itr_dist 
 
 if __name__ == '__main__':
     #Folders for the input
+    cwd = os.getcwd()
+    print(cwd)
     dataDir = os.path.join(cwd, 'Data');
     featureDir = os.path.join(cwd, 'Results');
-    image_dir = [os.path.join(cwd,'/TCGA/data')]
-    lung_dir = [os.path.join(cwd,'/TCGA/lung')]
-    csv_file = [os.path.join(cwd,'/TCGA/TCGA_LUSC_data.csv')]
+    image_dir = [os.path.join(dataDir,'TCGA','data')]
+    lung_dir = [os.path.join(dataDir,'TCGA','lung')]
+    csv_file = [os.path.join(dataDir,'TCGA','TCGA_LUSC_data.csv')]
 
     h5_file = ['TCGA_LUSC']
 
