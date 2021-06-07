@@ -1,8 +1,10 @@
 # PanCancer
 
-The codes are designed to extract shape descriptor and regional variation features. See technical details in the following paper: 
+The codes are designed to extract shape descriptor and regional variation features. 
 
-Wu et al. Radiological tumor classification across imaging modality and histology, Nature Machine Intelligence, 2021.
+If you are using the codes, please cite the following paper and code DOI:
+1. Wu et al. Radiological tumor classification across imaging modality and histology, Nature Machine Intelligence, 2021.
+2. https://doi.org/10.5281/zenodo.4906510
 
 "matlab" folder contains codes for shape features and "python" folder contains codes for regional variation features
 
